@@ -10,6 +10,9 @@
     .muted { color: #666; }
     .card { border: 1px solid #ddd; border-radius: 12px; padding: 1rem; margin: 1rem 0; }
     a { text-decoration: none; }
+    .cta { display:inline-block; background:#111; color:#fff; padding:.75rem 1rem; border-radius:10px; font-weight:600; }
+    .subcta { display:inline-block; margin-left:.6rem; }
+    code { background:#f4f4f4; padding:.1rem .35rem; border-radius:6px; }
     ul { padding-left: 1.2rem; }
   </style>
 </head>
@@ -18,19 +21,21 @@
   <p class="muted">Nightly surprise micro-apps generated at 2:00 AM.</p>
 
   <div class="card">
-    <h2>How to use</h2>
-    <ul>
-      <li>Open this page from your phone anytime.</li>
-      <li>Each date folder in the repo contains that night’s artifact and README.</li>
-      <li>Newest entries appear in commit history until we add an auto indexer.</li>
-    </ul>
-    <p><a href="https://github.com/finnykoshy1-create/finny-nightly-lab">View source repo</a></p>
+    <h2>Open Tonight’s Rhythm Card</h2>
+    <p>
+      <a class="cta" href="./latest/" target="_blank" rel="noopener">Open Latest Rhythm Card</a>
+      <a class="subcta" href="https://github.com/finnykoshy1-create/finny-nightly-lab/tree/main" target="_blank" rel="noopener">Source</a>
+    </p>
+    <p class="muted">Stable link for your phone: <code>https://finnykoshy1-create.github.io/finny-nightly-lab/latest/</code></p>
   </div>
 
   <div class="card">
-    <h2>Live artifact folders</h2>
-    <p>Browse by date (example path):</p>
-    <p><code>https://github.com/finnykoshy1-create/finny-nightly-lab/tree/main/2026-05-31</code></p>
+    <h2>How to use</h2>
+    <ul>
+      <li>Open this page from your phone anytime.</li>
+      <li>Tap <strong>Open Latest Rhythm Card</strong>.</li>
+      <li>The nightly job now refreshes <code>/latest/</code> automatically.</li>
+    </ul>
   </div>
 </body>
 </html>
