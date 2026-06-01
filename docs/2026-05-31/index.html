@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tropical Hut Daily Rhythm Card</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <p class="kicker">Tonight's Surprise</p>
+        <h1>Tropical Hut Daily Rhythm Card</h1>
+        <p>
+          A 7-minute planning ritual that blends store operations, family
+          leadership, and spiritual intentionality into one focused card.
+        </p>
+      </header>
+
+      <main class="grid">
+        <section class="panel">
+          <h2>Build your card</h2>
+          <form id="card-form">
+            <label>Date
+              <input type="date" id="date" required />
+            </label>
+
+            <label>Prayer focus (1 line)
+              <input type="text" id="prayerFocus" placeholder="E.g., wisdom, patience, encouragement" maxlength="120" />
+            </label>
+
+            <label>Scripture / truth anchor
+              <input type="text" id="scripture" placeholder="E.g., James 1:5" maxlength="120" />
+            </label>
+
+            <label>Store top 3 outcomes (comma separated)
+              <input type="text" id="storeTop3" placeholder="Shrink check, reorder rice, train cashier" maxlength="240" />
+            </label>
+
+            <label>Critical inventory watch (comma separated)
+              <input type="text" id="inventoryWatch" placeholder="Eggs, milk, onions" maxlength="240" />
+            </label>
+
+            <label>Delegation moves (comma separated)
+              <input type="text" id="delegation" placeholder="Assign stock count to..., close-out to..." maxlength="240" />
+            </label>
+
+            <label>Family leadership action
+              <input type="text" id="familyAction" placeholder="15-min check-in with spouse after dinner" maxlength="180" />
+            </label>
+
+            <label>Health non-negotiable
+              <input type="text" id="healthAction" placeholder="30-min walk + no sugary drinks" maxlength="180" />
+            </label>
+
+            <label>Finish-what-I-start trigger
+              <input type="text" id="finishTrigger" placeholder="Before new task: close one open loop" maxlength="180" />
+            </label>
+
+            <div class="buttons">
+              <button type="submit">Generate Card</button>
+              <button type="button" id="saveBtn" class="secondary">Save Locally</button>
+              <button type="button" id="loadBtn" class="secondary">Load Last</button>
+              <button type="button" id="copyBtn" class="secondary">Copy as Text</button>
+            </div>
+          </form>
+        </section>
+
+        <section class="panel">
+          <h2>Your daily card</h2>
+          <article id="card-output" class="card-output">
+            <p class="muted">Fill the form and click <strong>Generate Card</strong>.</p>
+          </article>
+        </section>
+      </main>
+
+      <footer>
+        <small>
+          Built for Finny's nightly lab • local-first • no accounts • no API keys
+        </small>
+      </footer>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
